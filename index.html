@@ -4,12 +4,19 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Come and Gone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="initial-scale=.4, maximum-scale=1, user-scalable=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 <body>
-    <iframe src="http://mud.torch.team" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-        Your browser doesn't support iframes
-    </iframe>
+    <p id='terminal'></p>
+    <div id='prompt-wrapper'>
+        <input id='prompt' type='text' spellcheck="false" autocorrect="off" autocapitalize="off">
+        <!-- <span id='promptCopy'> </span> -->
+    </div>
+
+    <script src="./assets/socket.io.js"></script>
+    <script>var socket = io('mud.torch.team');</script>
+    <script src="./main.js"></script>
+    
 </body>
 </html>
